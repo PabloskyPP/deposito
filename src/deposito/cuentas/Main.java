@@ -5,21 +5,21 @@ public class Main {
     }
 
     public static void operativa_cuenta(double cantidad) { //se recibe el nuevo parámetro cantidad
-        CCuenta cuenta1; //declaración de variables
+        CCuenta cuenta0; //declaración de variables
         double saldoActual;
 
-        cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
-        saldoActual = cuenta1.estado();
+        cuenta0 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        saldoActual = cuenta0.estado();
         System.out.println("El saldo actual es" + saldoActual);
 
         try {
-            cuenta1.retirar(cantidad);
+            cuenta0.retirar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(695);
+            cuenta0.ingresar(695);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
